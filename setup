@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo sh setup-zsh.sh
+
