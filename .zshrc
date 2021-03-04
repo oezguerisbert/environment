@@ -72,9 +72,9 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh > /dev/null
 
-source ~/.zplug/init.zsh
+source ~/.zplug/init.zsh > /dev/null
 
 zplug "YannickFricke/yarn-completion", from:github
 zplug "plugins/git",   from:oh-my-zsh
