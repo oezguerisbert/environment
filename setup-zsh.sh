@@ -6,7 +6,7 @@ sudo update && sudo upgrade -y
 sudo apt install zsh
 
 
-cp ./.zshrc ~/.zshrc
+cp .zshrc ~/.zshrc
 
 bash -c 'curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh'
 
