@@ -1,14 +1,16 @@
 #!/bin/bash
 echo "Installing Zsh"
 
-sudo update && sudo upgrade -y
+sudo apt update && sudo apt upgrade -y
 
-sudo apt install zsh
+sudo apt install zsh -y
 
-curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
+zsh
 
-cp ./zshrc ~/.zshrc
+cp .zshrc ~/.zshrc
 
-cd ~/
+bash -c 'curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh'
 
-source ./zshrc
+source .zshrc
+
+chsh -s $(which zsh)
