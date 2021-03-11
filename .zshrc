@@ -87,6 +87,7 @@ zplug "hlissner/zsh-autopair", defer:2
 zplug "YannickFricke/NodeAliases", use:"aliases.sh"
 zplug "code-stats/code-stats-zsh", from:gitlab, use:"codestats.plugin.zsh"
 zplug "jerguslejko/zsh-symfony-completion", use:"symfony-console.plugin.zsh"
+zplug "lukechilds/zsh-nvm"
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
@@ -95,7 +96,9 @@ if ! zplug check --verbose; then
     fi
 fi
 
-zplug load --verbose
+# zplug load --verbose
+
+zplug load
 
 # User configuration
 
@@ -133,3 +136,6 @@ mkd() {
         mkdir -p -- "$1" &&
     cd -P -- "$1" && clear
 }
+
+cd ~
+clear
