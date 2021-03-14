@@ -137,5 +137,5 @@ mkd() {
     cd -P -- "$1" && clear
 }
 
-cd ~
+# cd ~
 clear
